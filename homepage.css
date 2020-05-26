@@ -1,0 +1,185 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* border: 1px dotted black; */
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+    color: white;
+}
+
+.bg-color {
+    background-color: rgb(253, 40, 83);
+    margin: 30px auto;
+    width: 80%;
+    height: 80%;
+    box-shadow: 0px 5px 3px black;
+}
+
+header {
+    display: flex;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    align-items: center;
+}
+
+.logo-container img,
+.user-icon img
+{
+    width: 50px;
+    height: 50px;
+}
+
+.logo-container,
+.nav-links,
+.user-icon
+{
+display: flex;
+}
+
+
+.logo-container {
+    flex: 1;
+}
+
+.logo {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 5px;
+}
+
+/* nav {
+    flex: 1;
+    justify-content: flex-end;
+
+} */
+
+/* .nav-links {
+    justify-content: space-around;
+    list-style: none;
+}
+
+.nav-link {
+    color: rgb(20, 220, 97);
+    font-size: 18px;
+    text-decoration: none;
+      
+} */
+
+.user-icon {
+    flex: 1;
+    justify-content: flex-end ;
+}
+
+.user-name {
+    font-size: 30px;
+    font-weight: 800;
+    margin: 5px;
+}
+
+.presentation {
+    display: flex;
+    width: 90%;
+    margin: auto;
+    min-height: 80vh;
+    align-items: center;
+}
+
+.introduction {
+    flex: 1;
+}
+
+.intro-text h1{
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.intro-text p {
+    margin-top: 10px;
+    font-size: 22px;
+}
+
+.cta {
+    padding: 50px 0px 0px 0px;
+}
+
+.cta-select {
+    border: 2px solid darkgray;
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.cover {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+}
+
+.cover img {
+    height: 80%;
+    width: 70%;
+    filter: drop-shadow(0px 5px 3px black);
+    animation: drop 1.5s ease;
+}
+
+@keyframes drop {
+    0% {
+        opacity: 0;
+        transform: translateY(-80px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .presentation {
+        flex-direction: column-reverse;
+    }
+
+    .introduction {
+        margin-top: 5vh;
+        text-align: center;
+    }
+
+    .intro-text {
+        font-size: 30px;
+    }
+
+    .intro-text h1 {
+        font-size: 30px;
+    }
+
+    .intro-text p {
+        font-size: 18px;
+    }
+
+    .cover img {
+        height: 80%;
+        margin-top: 10vh;
+    }
+
+    .bg-color {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-shadow: none;
+    }
+
+    .cta-select {
+        margin-bottom: 10px;
+    }
+
+    .user-name, .logo {
+        font-size: 20px;
+    }
+}
